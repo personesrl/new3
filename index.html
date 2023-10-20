@@ -28,11 +28,11 @@
 
         <!-- Begin page -->
         <div class="layout-wrapper landing">
-            <nav class="navbar navbar-expand-lg navbar-landing fixed-top job-navbar" id="navbar">
+            <nav class="navbar navbar-expand-lg navbar-landing fixed-top job-navbar mb-0 pb-0 mt-0 pt-0" id="navbar">
                 <div class="container-fluid custom-container">
                     <a class="navbar-brand" href="/index.html">
-                        <img src="./index_files/logo-dark.png" class="card-logo card-logo-dark" alt="logo dark" height="90">
-                        <img src="./index_files/logo-light.png" class="card-logo card-logo-light" alt="logo light" height="90">
+                        <img src="./index_files/logo-dark.png" class="card-logo card-logo-dark" alt="logo dark" style="height: 90px;width: auto">
+                        <img src="./index_files/logo-light.png" class="card-logo card-logo-light" alt="logo light"  style="height: 90px;width: auto">
                     </a>
                     <button class="navbar-toggler py-0 fs-20 text-body" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="mdi mdi-menu"></i>
@@ -72,7 +72,7 @@
                             <div class="position-relative home-img text-center mt-5 mt-lg-0">
 
 
-                                <img src="./Colaboration.jpg" alt="" class="user-img" height="600">
+                                <img src="./Colaboration.jpg" alt="" class="user-img" style="height: 600px;width: auto">
 
                                 <div class="circle-effect">
                                     <div class="circle"></div>
@@ -446,8 +446,20 @@
                             </div>
                         </div>
                     </div>
-                    <iframe allowtransparency="true" style="width: 100%; height: 350px; margin-top: 10px; margin-bottom: 10px;" src="//www.weebly.com/weebly/apps/generateMap.php?map=google&amp;elementid=829502027173358696&amp;ineditor=0&amp;control=3&amp;width=auto&amp;height=350px&amp;overviewmap=0&amp;scalecontrol=0&amp;typecontrol=0&amp;zoom=17&amp;long=16.8723587&amp;lat=41.0922884&amp;domain=www&amp;point=1&amp;align=1&amp;reseller=false"></iframe>
-                </div>
+                    <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                        var setting = {"query":"Traversa Vassallo, 8, Bari BA, Italia","width":800,"height":600,"satellite":false,"zoom":14,"placeId":"EipUcmF2ZXJzYSBWYXNzYWxsbywgOCwgNzAxMjUgQmFyaSBCQSwgSXRhbHkiMBIuChQKEgnRreWZuulHExFH-dx6aGUSJBAIKhQKEgkJ74bquulHExFW5ZOmnXrUkg","cid":"0x51055d7838774548","coords":[41.0914728,16.8785707],"lang":"it","queryString":"Traversa Vassallo, 8, Bari BA, Italia","centerCoord":[41.0914728,16.8785707],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1015817"};
+                        var d = document;
+                        var s = d.createElement('script');
+                        s.src = 'https://1map.com/js/script-for-user.js?embed_id=1015817';
+                        s.async = true;
+                        s.onload = function () {
+                            window.OneMap.initMap(setting)
+                        };
+                        var to = d.getElementsByTagName('script')[0];
+                        to.parentNode.insertBefore(s, to);
+                    })();</script></div>
+                    </div>
                 <!-- end container -->
             </section>
             <!-- end cta -->
@@ -458,8 +470,8 @@
                     <div class="row">
                         <div class="col-lg-6 mt-4">
                             <div>
-                                <div>
-                                    <img src="./index_files/logo-light.png" alt="logo light" height="90">
+                                <div>j
+                                    <img src="./index_files/logo-light.png" alt="logo light" style="height: 90px;width: auto">
                                 </div>
                                 <div class="mt-4 fs-15">
                                     <p>Custodi Di Eccellenza Umana:</p>
@@ -677,6 +689,7 @@
 
         <!-- JAVASCRIPT -->
         <script src="index_files/bootstrap.min.js"></script>
+        <script src="index_files/bootstrap.bundle.min.js"></script>
         <script src="index_files/simplebar.min.js"></script>
         <script src="index_files/waves.min.js"></script>
         <script src="index_files/feather.min.js"></script>
