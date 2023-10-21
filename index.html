@@ -36,14 +36,36 @@
     }
     img { max-width: 100%;}
 
-    .row.no-gutters {
-        margin-right: 0;
-        margin-left: 0;
-    }
 
     .row.no-gutters > [class^="col-"], .row.no-gutters > [class*=" col-"] {
         padding-right: 0;
         padding-left: 0;
+    }
+
+    .img__wrap {
+        position: relative;
+        height: 200px;
+        width: 257px;
+    }
+
+    .img__description {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(29, 106, 154, 0.72);
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+
+        /* transition effect. not necessary */
+        transition: opacity .2s, visibility .2s;
+    }
+
+    .img__wrap:hover .img__description {
+        visibility: visible;
+        opacity: 1;
     }
 </style>
 <body data-bs-spy="scroll" data-bs-target="#navbar-example">
@@ -83,38 +105,21 @@
 
     <!-- start hero section -->
     <section class="section job-hero-section bg-light pb-0" id="home">
-        <div class="container p-0 m-0 ms-1 me-1 ps-1 pe-1">
-            <div class="row g-1 no-gutters">
-                <div class="col-lg-4 p-1">
-                    <div>
-                        <div class="text-center">
-                            <h2 class="display-4 fw-bolder text-capitalize mb-3 lh-base">Custodi Di Eccellenza Umana: <br>
-                                Realizziamo Il Potenziale Delle <strong>PERSONE</strong></h2>
-                        </div>
-                        <p class="lead text-muted lh-base mb-4">Persone Srl è una società specializzata nell'aiutare
-                            organizzazioni complesse e imprenditori a gestire efficacemente le risorse umane. Si basano
-                            sull'esperienza di consulenti esperti nel campo, affiancati da giovani innovatori, per
-                            massimizzare il valore delle persone all'interno di un'organizzazione. Il loro obiettivo
-                            principale è consentire alle aziende di raggiungere i propri obiettivi</p>
-                    </div>
-                </div>
-                <!--end col-->
-                <div class="col-lg-8">
+        <div class="container p-0 m-0 ms-1 me-1 ps-1 pe-1 img__wrap">
                     <div class="position-relative home-img text-center mt-5 mt-lg-0">
-
-
                         <img src="./Colaboration.jpg" alt="" class="user-img" style="height: 600px;width: auto">
-
-                        <div class="circle-effect">
-                            <div class="circle"></div>
-                            <div class="circle2"></div>
-                            <div class="circle3"></div>
-                            <div class="circle4"></div>
-                        </div>
                     </div>
+            <div class="img__description">
+                <div class="text-center">
+                    <h2 class="display-4 fw-bolder text-capitalize mb-3 lh-base">Custodi Di Eccellenza Umana: <br>
+                        Realizziamo Il Potenziale Delle <strong>PERSONE</strong></h2>
                 </div>
+                <p class="lead text-muted lh-base mb-4">Persone Srl è una società specializzata nell'aiutare
+                    organizzazioni complesse e imprenditori a gestire efficacemente le risorse umane. Si basano
+                    sull'esperienza di consulenti esperti nel campo, affiancati da giovani innovatori, per
+                    massimizzare il valore delle persone all'interno di un'organizzazione. Il loro obiettivo
+                    principale è consentire alle aziende di raggiungere i propri obiettivi</p>
             </div>
-            <!-- end row -->
         </div>
         <!-- end container -->
     </section>
