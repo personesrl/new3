@@ -34,6 +34,17 @@
     a:not([class*="btn"]):hover {
         text-decoration: underline;
     }
+    img { max-width: 100%;}
+
+    .row.no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .row.no-gutters > [class^="col-"], .row.no-gutters > [class*=" col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
 </style>
 <body data-bs-spy="scroll" data-bs-target="#navbar-example">
 
@@ -73,7 +84,7 @@
     <!-- start hero section -->
     <section class="section job-hero-section bg-light pb-0" id="home">
         <div class="container p-0 m-0 ms-1 me-1 ps-1 pe-1">
-            <div class="row g-1">
+            <div class="row g-1 no-gutters">
                 <div class="col-lg-6 p-1">
                     <div>
                         <div class="text-center">
