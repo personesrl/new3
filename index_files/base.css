@@ -16,7 +16,9 @@ a:not([class*="btn"]) {
 a:not([class*="btn"]):hover {
     text-decoration: underline;
 }
-
+header {
+    display: block;
+}
 header.masthead .masthead-subheading {
     font-size: 1.5rem;
     font-style: italic;
